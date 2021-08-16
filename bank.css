@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size:50px;
+}
+span{
+    color: blueviolet;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 28px;
+}
+.box-section{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-right: 25px;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 0px 50px;
+    width: 170px;
+}
+.box-section2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.box2{
+    margin-right: 25px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 375px;
+}
+.enter{
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button{
+    font-size: 18px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
