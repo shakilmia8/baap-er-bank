@@ -15,6 +15,7 @@ function getAmount(totalFieldId, amount) {
 function getCurrentBalance() {
     const balanceText = document.getElementById('balance-text');
     const balanceValue = parseFloat(balanceText.innerText);
+    return balanceValue;
 }
 
 function getTotalBalance(amount, shakil) {
@@ -57,7 +58,7 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     const withdrawValue = parseFloat(inputWithdraw.value); */
     const withdrawValue = getInputValue('input-withdraw');
     const currentBalance = getCurrentBalance();
-    if (withdrawValue > 0 && currentBalance < withdrawValue) {
+    if (withdrawValue > 0 && withdrawValue <= currentBalance) {
         getAmount('withdraw-text', withdrawValue);
         getTotalBalance(withdrawValue, false);
     }
